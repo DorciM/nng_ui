@@ -1,0 +1,117 @@
+* {  font-family: "Comic Sans MS", sans-serif;}
+
+
+[class*='col-'] {
+    float: left;
+}
+
+.col-2 {
+    width: 50%;
+    height: 100vh;
+}
+
+.layer_test:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+[class*='col-'] {
+    padding-right: 20px;
+}
+[class*='col-']:last-of-type {
+    padding-right: 0;
+}
+
+.col-3-4 {
+    text-align: center;
+    float: left;
+}
+
+#speedometer {
+    width: 80%;
+    text-align: center;
+    border: solid black 1px;
+    margin-top: 8%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#speedometer h3 {
+    padding: 20% 30px;;
+    color:grey;
+}
+
+table {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10%;
+    line-height: 2.3;
+}
+
+#back-btn {
+    padding: 15px 25px;
+    margin-left: 10%;
+    margin-top: 7%;
+}
+
+.map-container {
+    float: right;
+    height: 100vh;
+}
+
+.map-container h4 { display: inline}
+
+#map {
+    float: right;
+    width: 80%;
+    background-position: center;
+    background-size: cover;
+    background-image: url(images/hollywood_map_348.jpg);
+}
+
+/* Make the map responsive */
+#map:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.street-header { padding: 2% 5%;}
+
+.street-header .col-1-4 {
+    margin-left: 20%;
+    margin-right: 20%;
+    background-image: url("images/arrow.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.street-header .col-3-4 {  float: inherit;  }
+
+.street-footer {
+    padding: 5%;
+    display: -webkit-inline-box;
+    margin-left: 45%;
+}
+
+#buttons {
+    float: right;
+    width: 15%;
+    z-index: 50;
+    margin-top: 30%;
+    text-align: -webkit-right;
+
+}
+
+#buttons button {
+    width: 100%;
+    text-align: center;
+    height: 65px;
+    min-height: 30px;
+    display: block;
+}
